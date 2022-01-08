@@ -24,6 +24,18 @@ const Experiences = () => {
         .exp-container {
           margin-top: 100px;
           display: flex;
+          animation: slide-in-bottom-top 1.5s;
+        }
+
+        @keyframes slide-in-bottom-top{
+          from{
+            transform: translateY(100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0%);
+            opacity: 100%;
+          }
         }
       `}</style>
     </>

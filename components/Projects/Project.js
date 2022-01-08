@@ -1,11 +1,17 @@
+import { useEffect } from "react";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import styles from "../../styles/Home.module.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Project = (props) => {
   const dark = useSelector((state) => state.dark);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
-      <div className="project-container">
+      <div data-aos="fade-up" className="project-container">
         {/* <Image
           src={`${props.images}/main.png`}
           alt={props.name}

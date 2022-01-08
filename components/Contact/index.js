@@ -1,14 +1,20 @@
+import { useEffect } from "react";
 import ContactBtn from "./ContactBtn";
 import ContactBtnLight from "./ContactBtnLight";
 import { useSelector } from "react-redux";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Contact = () => {
   const dark = useSelector((state) => state.dark);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <div className="contact-section">
         <div className="heading">Contact</div>
         {dark ? (
-          <div className="btns">
+          <div data-aos="fade-left" className="btns">
             <ContactBtn
               icon="/mail-fill.svg"
               txt="Send an email"
@@ -26,7 +32,7 @@ const Contact = () => {
             />
           </div>
         ) : (
-          <div className="btns">
+          <div data-aos="fade-left" className="btns">
             <ContactBtnLight
               icon="/light/mail-fill.svg"
               txt="Send an email"

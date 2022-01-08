@@ -1,5 +1,6 @@
 import Project from "./Project";
 import projectsList from "../../constants/projectsList";
+import "animate.css/animate.min.css";
 
 const Projects = () => {
   return (
