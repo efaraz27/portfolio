@@ -1,12 +1,10 @@
 html,
 body {
   font-family: "Inter", sans-serif;
+  margin: auto;
+  max-width: 1200px;
   font-size: 18px;
   line-height: 24px;
-  margin: 0;
-}
-
-.light-mode{
   background-color: white;
   color: #201F1F;
   font-weight: 300;
