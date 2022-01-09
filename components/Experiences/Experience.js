@@ -1,10 +1,16 @@
 import styles from "../../styles/Home.module.css";
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Experience = (props) => {
   const dark = useSelector((state) => state.dark);
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
-      <div className="exp">
+      <div data-aos="fade-up" className="exp">
         <div className="position">
           <div className="position-name">{props.positionName}</div>
           <div className="date">{props.date}</div>
