@@ -28,3 +28,10 @@
 .tagLight {
   color: #004E93;
 }
+
+@media only screen and (max-width: 1400px){
+  .contents {
+    margin: 0;
+    max-width: auto;
+  }
+}

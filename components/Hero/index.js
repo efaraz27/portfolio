@@ -1,12 +1,22 @@
 import Image from "next/image";
 import { useSelector } from "react-redux";
+import useDeviceSize from "../../hooks/useDeviceSize";
 const Hero = () => {
   const dark = useSelector((state) => state.dark);
+  const [width, height] = useDeviceSize();
   return (
     <>
       <div className="hero-section">
         <div>Hey, I&apos;m</div>
-        <div className="name">Ehtesham Faraz</div>
+        {width > 400 ? (
+          <div className="name">Ehtesham Faraz</div>
+        ) : (
+          <div className="name">
+            Ehtesham
+            <br />
+            Faraz
+          </div>
+        )}
         <div className="desc">
           I&apos;m a software engineer based in Kolkata, India and also a
           computer science student. I enjoy creating things that live on the
@@ -63,7 +73,7 @@ const Hero = () => {
           transition: 0.15s ease-in-out;
         }
 
-        .say-hi:hover > .arrow{
+        .say-hi:hover > .arrow {
           transform: translateX(20%);
         }
         .desc {
@@ -97,6 +107,44 @@ const Hero = () => {
           to {
             transform: translateY(0%);
             opacity: 100%;
+          }
+        }
+        @media only screen and (max-width: 800px) {
+          .hero-section {
+            margin: 30px 0px;
+          }
+          .name {
+            font-size: 60px;
+          }
+        }
+        @media only screen and (max-width: 550px) {
+          .name {
+            line-height: normal;
+          }
+        }
+        @media only screen and (max-width: 475px) {
+          .hero-section {
+            margin: 0px;
+          }
+          .name {
+            font-size: 50px;
+            margin: 0px 0px;
+          }
+          .say-hi {
+            margin-bottom: 0px;
+            margin-top: 20px;
+          }
+        }
+        @media only screen and (max-width: 400px) {
+          .name{
+            animation: none;
+          }
+          .hero-section {
+            margin: 0px;
+          }
+          .say-hi {
+            margin-bottom: 0px;
+            margin-top: 20px;
           }
         }
       `}</style>

@@ -27,14 +27,24 @@ const Experiences = () => {
           animation: slide-in-bottom-top 1.5s;
         }
 
-        @keyframes slide-in-bottom-top{
-          from{
+        @keyframes slide-in-bottom-top {
+          from {
             transform: translateY(100%);
             opacity: 0;
           }
           to {
             transform: translateY(0%);
             opacity: 100%;
+          }
+        }
+        @media only screen and (max-width: 900px) {
+          .exp-container {
+            flex-wrap: wrap;
+          }
+        }
+        @media only screen and (max-width: 800px) {
+          .exp-container {
+            margin-top: 60px;
           }
         }
       `}</style>

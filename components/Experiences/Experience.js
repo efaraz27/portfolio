@@ -52,6 +52,17 @@ const Experience = (props) => {
         .dash {
           margin-right: 4px;
         }
+        @media only screen and (max-width: 900px) {
+          .exp {
+            margin-left: 0px;
+            margin-top: 49px;
+          }
+        }
+        @media only screen and (max-width: 650px) {
+          .position {
+            flex-direction: column;
+          }
+        }
       `}</style>
     </>
   );

@@ -56,13 +56,20 @@ const Project = (props) => {
         .image-container {
           border-radius: 4px;
           overflow: hidden;
-          width: 551px;
-          height: 338px;
         }
         .content {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+        }
+
+        @media only screen and (max-width: 550px) {
+          .desc {
+            font-size: 12px;
+          }
+          .heading {
+          font-size: 22px;
+        }
         }
       `}</style>
     </>

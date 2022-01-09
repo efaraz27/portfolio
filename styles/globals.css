@@ -4,11 +4,12 @@ body {
   font-size: 18px;
   line-height: 24px;
   margin: 0;
+  overflow-x: hidden;
 }
 
-.light-mode{
+.light-mode {
   background-color: white;
-  color: #201F1F;
+  color: #201f1f;
   font-weight: 300;
 }
 
@@ -19,4 +20,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 550px) {
+  html,
+  body {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
