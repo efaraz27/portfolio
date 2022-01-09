@@ -14,7 +14,7 @@ const Contact = () => {
       <div className="contact-section">
         <div className="heading">Contact</div>
         {dark ? (
-          <div data-aos="fade-left" className="btns">
+          <div className="btns">
             <ContactBtn
               icon="/mail-fill.svg"
               txt="Send an email"
