@@ -110,6 +110,11 @@ const Navbar = () => {
             margin-bottom: 30px;
           }
         }
+        @media only screen and (max-width: 800px) {
+          .navbar {
+            margin-bottom: 0px;
+          }
+        }
       `}</style>
     </>
   );

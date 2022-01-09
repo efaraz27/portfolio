@@ -24,6 +24,7 @@ const ContactBtnLight = (props) => {
           opacity: 60%;
           transition: 0.25s ease-in-out;
           cursor: pointer;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
         }
         .btn-container:hover {
           opacity: 100%;

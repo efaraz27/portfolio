@@ -26,7 +26,7 @@ const Hero = () => {
           and valuable knowledge from all different kinds of fields throughout
           my projects/work.
         </div>
-        <div className="say-hi">
+        <div className="say-hi noselect">
           Say hi{" "}
           <span className="arrow">
             <Image
@@ -67,6 +67,7 @@ const Hero = () => {
           font-size: 24px;
           margin: 40px 0px;
           cursor: pointer;
+          -webkit-tap-highlight-color: rgba(0,0,0,0);
         }
         .arrow {
           margin-left: 12px;
@@ -100,7 +101,7 @@ const Hero = () => {
         }
         @keyframes slide-in-top-bottom {
           from {
-            transform: translateY(-200%);
+            transform: translateY(-100%);
             opacity: 0;
           }
 
