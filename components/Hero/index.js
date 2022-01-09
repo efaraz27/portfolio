@@ -60,6 +60,7 @@ const Hero = () => {
           white-space: nowrap;
           overflow: hidden;
           width: 15ch;
+          opacity: 0;
         }
         .say-hi {
           display: flex;
@@ -147,7 +148,9 @@ const Hero = () => {
         }
         @media only screen and (max-width: 400px) {
           .name {
-            animation: fade 1s;
+            animation: fade 1.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
           }
           .hero-section {
             margin: 0px;
