@@ -67,7 +67,7 @@ const Hero = () => {
           font-size: 24px;
           margin: 40px 0px;
           cursor: pointer;
-          -webkit-tap-highlight-color: rgba(0,0,0,0);
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
         .arrow {
           margin-left: 12px;
@@ -110,6 +110,15 @@ const Hero = () => {
             opacity: 100%;
           }
         }
+
+        @keyframes fade {
+          from {
+            opacity: 0%;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
         @media only screen and (max-width: 800px) {
           .hero-section {
             margin: 30px 0px;
@@ -137,8 +146,8 @@ const Hero = () => {
           }
         }
         @media only screen and (max-width: 400px) {
-          .name{
-            animation: none;
+          .name {
+            animation: fade 1s;
           }
           .hero-section {
             margin: 0px;
