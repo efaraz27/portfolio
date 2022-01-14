@@ -101,7 +101,18 @@ const Navbar = () => {
         )}
         {open && (
           <Hamburger>
-            <div className="menu-item">Projects</div>
+            <div className="menu-item">
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                Projects
+              </Link>
+            </div>
             <div
               className="menu-item"
               onClick={() => {
@@ -112,7 +123,18 @@ const Navbar = () => {
             >
               Résumé
             </div>
-            <div className="menu-item">Contact</div>
+            <div className="menu-item">
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+              >
+                Contact
+              </Link>
+            </div>
           </Hamburger>
         )}
       </div>
