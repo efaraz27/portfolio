@@ -101,7 +101,12 @@ const Navbar = () => {
         )}
         {open && (
           <Hamburger>
-            <div className="menu-item">
+            <div
+              className="menu-item"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               <Link
                 activeClass="active"
                 to="projects"
@@ -119,11 +124,17 @@ const Navbar = () => {
                 openInNewTab(
                   "https://drive.google.com/file/d/1tEd7QW73NxeSqTMuhOh4smIhfm8ytFZT/view"
                 );
+                setOpen(!open);
               }}
             >
               Résumé
             </div>
-            <div className="menu-item">
+            <div
+              className="menu-item"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
               <Link
                 activeClass="active"
                 to="contact"
