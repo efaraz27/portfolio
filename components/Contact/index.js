@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import ContactBtn from "./ContactBtn";
 import ContactBtnLight from "./ContactBtnLight";
 import { useSelector } from "react-redux";
@@ -6,6 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 const Contact = () => {
   const dark = useSelector((state) => state.dark);
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -13,43 +14,45 @@ const Contact = () => {
     <>
       <div className="contact-section">
         <div className="heading">Contact</div>
-        {dark ? (
-          <div className="btns">
-            <ContactBtn
-              icon="/mail-fill.svg"
-              txt="Send an email"
-              alt="email-icon"
-            />
-            <ContactBtn
-              icon="/linkedin-fill.svg"
-              txt="LinkedIn"
-              alt="linkedin-icon"
-            />
-            <ContactBtn
-              icon="/github-fill.svg"
-              txt="Github"
-              alt="github-icon"
-            />
-          </div>
-        ) : (
-          <div data-aos="fade-left" className="btns">
-            <ContactBtnLight
-              icon="/light/mail-fill.svg"
-              txt="Send an email"
-              alt="email-icon"
-            />
-            <ContactBtnLight
-              icon="/light/linkedin-fill.svg"
-              txt="LinkedIn"
-              alt="linkedin-icon"
-            />
-            <ContactBtnLight
-              icon="/light/github-fill.svg"
-              txt="Github"
-              alt="github-icon"
-            />
-          </div>
-        )}
+        <div className="btns">
+          {dark ? (
+            <>
+              <ContactBtn
+                icon="/mail-fill.svg"
+                txt="Send an email"
+                alt="email-icon"
+              />
+              <ContactBtn
+                icon="/linkedin-fill.svg"
+                txt="LinkedIn"
+                alt="linkedin-icon"
+              />
+              <ContactBtn
+                icon="/github-fill.svg"
+                txt="Github"
+                alt="github-icon"
+              />
+            </>
+          ) : (
+            <>
+              <ContactBtnLight
+                icon="/light/mail-fill.svg"
+                txt="Send an email"
+                alt="email-icon"
+              />
+              <ContactBtnLight
+                icon="/light/linkedin-fill.svg"
+                txt="LinkedIn"
+                alt="linkedin-icon"
+              />
+              <ContactBtnLight
+                icon="/light/github-fill.svg"
+                txt="Github"
+                alt="github-icon"
+              />
+            </>
+          )}
+        </div>
       </div>
       <style jsx>{`
         .contact-section {
