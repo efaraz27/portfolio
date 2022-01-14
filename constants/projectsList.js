@@ -13,6 +13,7 @@ const projectsList = [
     ),
     images: "/project-images/social-media-app",
     tags: "React - Material-UI - Express - MongoDB - AWS S3",
+    url: "https://social-media-app-efaraz27.herokuapp.com",
   },
   {
     name: "Rent Car App",
@@ -25,6 +26,7 @@ const projectsList = [
     ),
     images: "/project-images/rent-car-app",
     tags: "React - Redux - TailwindCSS",
+    url: "https://efaraz27.github.io/rent-car-app/",
   },
   {
     name: "Quick Fix",
@@ -37,6 +39,7 @@ const projectsList = [
     ),
     images: "/project-images/quick-fix",
     tags: "React - Node.js - Express.js - MongoDB",
+    url: "https://quick-fix-mern.herokuapp.com",
   },
   {
     name: "D.jas Tailors",
@@ -50,6 +53,7 @@ const projectsList = [
     ),
     images: "/project-images/djas",
     tags: "React - Node.js - Express.js - MongoDB - Razorpay",
+    url: "http://djas-tailors.herokuapp.com/#",
   },
 ];
 

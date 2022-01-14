@@ -4,6 +4,7 @@ import ContactBtnLight from "./ContactBtnLight";
 import { useSelector } from "react-redux";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 const Contact = () => {
   const dark = useSelector((state) => state.dark);
 
@@ -12,7 +13,7 @@ const Contact = () => {
   }, []);
   return (
     <>
-      <div className="contact-section">
+      <div className="contact-section" id="contact">
         <div className="heading">Contact</div>
         <div className="btns">
           {dark ? (
@@ -21,16 +22,19 @@ const Contact = () => {
                 icon="/mail-fill.svg"
                 txt="Send an email"
                 alt="email-icon"
+                url= "mailto:efaraz27@gmail.com"
               />
               <ContactBtn
                 icon="/linkedin-fill.svg"
                 txt="LinkedIn"
                 alt="linkedin-icon"
+                url= "https://www.linkedin.com/in/ehtesham-faraz/"
               />
               <ContactBtn
                 icon="/github-fill.svg"
                 txt="Github"
                 alt="github-icon"
+                url= "https://github.com/efaraz27"
               />
             </>
           ) : (
@@ -39,16 +43,19 @@ const Contact = () => {
                 icon="/light/mail-fill.svg"
                 txt="Send an email"
                 alt="email-icon"
+                url= "mailto:efaraz27@gmail.com"
               />
               <ContactBtnLight
                 icon="/light/linkedin-fill.svg"
                 txt="LinkedIn"
                 alt="linkedin-icon"
+                url= "https://www.linkedin.com/in/ehtesham-faraz/"
               />
               <ContactBtnLight
                 icon="/light/github-fill.svg"
                 txt="Github"
                 alt="github-icon"
+                url= "https://github.com/efaraz27"
               />
             </>
           )}

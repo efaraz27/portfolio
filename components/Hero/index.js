@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import useDeviceSize from "../../hooks/useDeviceSize";
+import { Link } from "react-scroll";
 const Hero = () => {
   const dark = useSelector((state) => state.dark);
   const [width, height] = useDeviceSize();
@@ -26,17 +27,26 @@ const Hero = () => {
           and valuable knowledge from all different kinds of fields throughout
           my projects/work.
         </div>
-        <div className="say-hi noselect">
-          Say hi{" "}
-          <span className="arrow">
-            <Image
-              src={dark ? "/Line.svg" : "/light/Line.svg"}
-              width="33px"
-              height="24px"
-              alt="arrow"
-            />
-          </span>
-        </div>
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1500}
+        >
+          <div className="say-hi noselect">
+            Say hi{" "}
+            <span className="arrow">
+              <Image
+                src={dark ? "/Line.svg" : "/light/Line.svg"}
+                width="33px"
+                height="24px"
+                alt="arrow"
+              />
+            </span>
+          </div>
+        </Link>
       </div>
       <style jsx>{`
         .hero-section {

@@ -1,8 +1,19 @@
 import Image from "next/image";
+
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
+
 const ContactBtnLight = (props) => {
   return (
     <>
-      <div className="btn-container">
+      <div
+        className="btn-container"
+        onClick={() => {
+          openInNewTab(props.url);
+        }}
+      >
         <div className="icon">
           <Image src={props.icon} width="24px" height="24px" alt={props.alt} />
         </div>
@@ -23,7 +34,7 @@ const ContactBtnLight = (props) => {
           margin-left: 12px;
           margin-bottom: 27px;
           opacity: 60%;
-          transition: 0.25s ease-in-out;
+          transition: 0.25s;
           cursor: pointer;
           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           width: 210px;

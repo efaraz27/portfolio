@@ -5,7 +5,7 @@ import "animate.css/animate.min.css";
 const Projects = () => {
   return (
     <>
-      <div className="projects-section">
+      <div className="projects-section" id="projects">
         <div className="heading">Featured projects</div>
         <div className="projects-container">
           {projectsList.map((project, index) => {
@@ -16,6 +16,7 @@ const Projects = () => {
                 desc={project.desc}
                 tags={project.tags}
                 key={index}
+                url={project.url}
               />
             );
           })}
@@ -32,7 +33,7 @@ const Projects = () => {
         .projects-container {
           margin-top: 51px;
           display: flex;
-          flex-wrap :wrap;
+          flex-wrap: wrap;
           justify-content: center;
           gap: 30px;
         }
