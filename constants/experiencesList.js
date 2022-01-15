@@ -1,6 +1,6 @@
 const experiencesList = [
   {
-    positionName: "Software Engineer Intern (Retmote)",
+    positionName: "Software Engineer Intern (Remote)",
     date: "Dec 2021 - Present",
     location: "Mezur / US - California",
     bullets: [
