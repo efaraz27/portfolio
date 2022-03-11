@@ -45,10 +45,9 @@ const experiencesList = [
         UX.
       </>,
       <>
-        The contribution of creating a bilingual feature in a{" "}
-        <span className="bold">Webflow</span> app and making improvements to UI
-        and UX led to a 35% increase in user engagement and increased the market
-        potential by making it accessible to native audiences.
+        The bilingual feature led to <span className="bold">35% increase</span>{" "}
+        in user engagement and increased the market potential by making it
+        accessible to native audiences.
       </>,
     ],
   },

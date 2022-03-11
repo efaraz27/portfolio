@@ -22,10 +22,10 @@ const Hero = () => {
           I&apos;m a software engineer based in Kolkata, India and also a
           computer science student. I enjoy creating things that live on the
           internet, whether that be websites, applications, or anything in
-          between. I have been freelancing for a year now while studying at the
-          university and I&apos;ve manage to gain a decent amount of experience
-          and valuable knowledge from all different kinds of fields throughout
-          my projects/work.
+          between. I have been working on Full Stack Web Applications for more
+          than a year now while studying at the university and I&apos;ve manage
+          to gain a decent amount of experience and valuable knowledge from all
+          different kinds of fields throughout my projects/work.
         </div>
         <Link
           activeClass="active"
