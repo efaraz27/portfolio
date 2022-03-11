@@ -7,7 +7,7 @@ const experiencesList = [
       <>
         Collaborated with a UI/UX designer to implemented a User Interface using{" "}
         <span className="bold">React</span> and{" "}
-        <span className="bold">Material UI</span> to create a mininmym viable
+        <span className="bold">Material UI</span> to create a minimum viable
         product.
       </>,
       <>
