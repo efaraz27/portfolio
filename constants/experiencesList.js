@@ -5,9 +5,10 @@ const experiencesList = [
     location: "Predli / US - San Francisco Bay Area",
     bullets: [
       <>
-        Collaborated with a UI/UX designer to design a User Interface in{" "}
-        <span className="bold">Figma</span> and implemented it using React.js
-        from scratch.
+        Collaborated with a UI/UX designer to implemented a User Interface using{" "}
+        <span className="bold">React</span> and{" "}
+        <span className="bold">Material UI</span> to create a mininmym viable
+        product.
       </>,
       <>
         Worked closely with the teach lead to design a{" "}
