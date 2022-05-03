@@ -1,10 +1,16 @@
+import { useEffect } from "react";
 import Experience from "./Experience";
 import experiencesList from "../../constants/experiencesList";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Experiences = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
-      <div className="exp-container">
+      <div data-aos="fade-up" className="exp-container">
         <div>EXPERIENCE</div>
         <div>
           {experiencesList.map((exp, index) => {

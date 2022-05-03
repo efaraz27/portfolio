@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import styles from "../styles/Home.module.css";
 import { useSelector } from "react-redux";
+import Skills from "../components/Skills";
 
 export default function Home() {
   const dark = useSelector((state) => state.dark);
@@ -22,6 +23,8 @@ export default function Home() {
         <div className={styles.contents}>
           <Navbar />
           <Hero />
+          {/* <Skills />
+          <Divider /> */}
           <Experiences />
           <Divider />
           <Projects />

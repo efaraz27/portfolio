@@ -5,13 +5,13 @@ const experiencesList = [
     location: "Predli / US - San Francisco Bay Area",
     bullets: [
       <>
-        Collaborated with a UI/UX designer to implemented a User Interface using{" "}
+        Collaborated with a UI/UX designer to engineer a User Interface using{" "}
         <span className="bold">React</span> and{" "}
-        <span className="bold">Material UI</span> to create a minimum viable
-        product.
+        <span className="bold">Material UI</span> for a minimum viable product
+        expected to raise over 5 Million USD.
       </>,
       <>
-        Worked closely with the teach lead to design a{" "}
+        Worked closely with the Teach Lead to design a{" "}
         <span className="bold">Trading System</span> for buying/selling music
         master rights .
       </>,
