@@ -17,38 +17,42 @@ const Project = (props) => {
   }, []);
   return (
     <>
-      <div data-aos="fade-up" className="project-container">
-        {/* <Image
+      <a href={props.url}>
+        <div data-aos="fade-up" className="project-container">
+          {/* <Image
           src={`${props.images}/main.png`}
           alt={props.name}
           width={'551px'}
           height={'338px'}
           quality={100}
         /> */}
-        <div
-          className="image-container"
-          onClick={() => {
-            openInNewTab(props.url);
-          }}
-        >
-          <Image
-            src={`${props.images}/main.png`}
-            alt={props.name}
-            width={"1350px"}
-            height={"900px"}
-            quality={100}
-          />
-        </div>
-        <div className="content">
-          <div className="heading">{props.name}</div>
-          <div className="desc">{props.desc}</div>
-          <div className="tags">
-            <span className={dark ? styles.tag : styles.tagLight}>
-              {props.tags}
-            </span>
+
+          <div
+            className="image-container"
+            // onClick={() => {
+            //   openInNewTab(props.url);
+            // }}
+          >
+            <Image
+              src={`${props.images}/main.png`}
+              alt={props.name}
+              width={"1350px"}
+              height={"900px"}
+              quality={100}
+            />
+          </div>
+
+          <div className="content">
+            <div className="heading">{props.name}</div>
+            <div className="desc">{props.desc}</div>
+            <div className="tags">
+              <span className={dark ? styles.tag : styles.tagLight}>
+                {props.tags}
+              </span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
       <style jsx>{`
         .project-container {
           max-width: 551px;

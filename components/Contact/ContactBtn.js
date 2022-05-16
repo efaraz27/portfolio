@@ -8,17 +8,24 @@ const openInNewTab = (url) => {
 const ContactBtn = (props) => {
   return (
     <>
-      <div
-        className="btn-container"
-        onClick={() => {
-          openInNewTab(props.url);
-        }}
-      >
-        <div className="icon">
-          <Image src={props.icon} width="24px" height="24px" alt={props.alt} />
+      <a href={props.url}>
+        <div
+          className="btn-container"
+          // onClick={() => {
+          //   openInNewTab(props.url);
+          // }}
+        >
+          <div className="icon">
+            <Image
+              src={props.icon}
+              width="24px"
+              height="24px"
+              alt={props.alt}
+            />
+          </div>
+          <div className="btn-txt">{props.txt}</div>
         </div>
-        <div className="btn-txt">{props.txt}</div>
-      </div>
+      </a>
       <style jsx>{`
         .btn-container {
           display: flex;

@@ -43,13 +43,15 @@ const Navbar = () => {
             </div>
             <div
               className="nav-link"
-              onClick={() => {
-                openInNewTab(
-                  "https://drive.google.com/file/d/1tEd7QW73NxeSqTMuhOh4smIhfm8ytFZT/view"
-                );
-              }}
+              // onClick={() => {
+              //   openInNewTab(
+              //     "https://drive.google.com/file/d/1tEd7QW73NxeSqTMuhOh4smIhfm8ytFZT/view"
+              //   );
+              // }}
             >
-              Résumé
+              <a href="https://docs.google.com/document/d/1wtVhJ-epnGNUCCfQbJT-KEyzSBjMiu09VzzvH4iBYhw/edit?usp=sharing">
+                Résumé
+              </a>
             </div>
             <div className="nav-link">
               <Link
