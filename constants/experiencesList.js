@@ -2,7 +2,7 @@ const experiencesList = [
   {
     positionName: "Software Development Engineer Intern (Remote)",
     date: "Jan 2021 - Present",
-    location: "Predli / US - San Francisco Bay Area",
+    location: "Predli / Sweden - Stockholm",
     bullets: [
       <>
         Collaborated with a UI/UX designer to engineer a User Interface using{" "}
@@ -29,7 +29,7 @@ const experiencesList = [
   {
     positionName: "Software Engineer Intern (Remote)",
     date: "Dec 2021 - Feb 2021",
-    location: "Mezur / US - California",
+    location: "Mezur / US - Berkley, California",
     bullets: [
       <>
         Designed and implemented a user on-boarding experience for new users
