@@ -1,14 +1,24 @@
 const experiencesList = [
   {
-    positionName: "Software Development Engineer Intern (Remote)",
-    date: "Jan 2021 - Present",
+    positionName: "Software Engineer Intern",
+    date: "Sep 2022 - Present",
+    location: "MasterExchange / Sweden - Stockholm",
+    bullets: [
+      <>
+        Responsible for engineering and maintaining Frontend and Backend
+        Applications
+      </>,
+    ],
+  },
+  {
+    positionName: "Software Development Engineer Intern",
+    date: "Jan 2021 - Sep 2022",
     location: "Predli / Sweden - Stockholm",
     bullets: [
       <>
-        Collaborated with a UI/UX designer to engineer a User Interface using{" "}
-        <span className="bold">React</span> and{" "}
-        <span className="bold">Material UI</span> for a minimum viable product
-        expected to raise over 5 Million USD.
+        Collaborated with a UI/UX designer to engineer a{" "}
+        <span className="bold">Frontend App</span> for a minimum viable product,
+        which raised over 2.8 Million USD.
       </>,
       <>
         Worked closely with the Teach Lead to design a{" "}
@@ -27,27 +37,27 @@ const experiencesList = [
     ],
   },
   {
-    positionName: "Software Engineer Intern (Remote)",
+    positionName: "Software Engineer Intern",
     date: "Dec 2021 - Feb 2021",
     location: "Mezur / US - Berkley, California",
     bullets: [
       <>
-        Designed and implemented a user on-boarding experience for new users
-        using <span className="bold">Intro.js</span>
+        Designed and implemented a{" "}
+        <span className="bold">user onboarding experience</span> for new users
+        using <span className="bold">Intro.js</span> improving user retention by
+        over <span className="bold">28%</span>.
       </>,
       <>
-        Made changes to existing <span className="bold">React</span> code-base,
-        fixed 20+ bugs realted to UI and made improvements to UX.
-      </>,
-      <>
-        Engineered a Bi-Lingual feature in a{" "}
-        <span className="bold">Webflow</span> app and made impovements to UI and
+        Made changes to existing React code-base,
+        <span className="bold">fixed 20+ bugs</span> and made improvements to
         UX.
       </>,
       <>
-        The bilingual feature led to <span className="bold">35% increase</span>{" "}
-        in user engagement and increased the market potential by making it
-        accessible to native audiences.
+        Engineered a <span className="bold">Bi-Lingual feature</span> in a{" "}
+        Webflow app and made impovements to UI and UX which led to a{" "}
+        <span className="bold">35% increase in user engagement</span> and
+        increased the market potential by making it accessible to native
+        audiences.
       </>,
     ],
   },
@@ -58,20 +68,16 @@ const experiencesList = [
     bullets: ["", "", "", ""],
     bullets: [
       <>
-        Designed and implemented a 10+ Web Applications like{" "}
-        <span className="bold">E-commerce</span> and{" "}
-        <span className="bold">Online Appointment Booking</span> Apps using{" "}
-        <span className="bold">React</span>,{" "}
-        <span className="bold">Express</span> and{" "}
-        <span className="bold">MongoDB</span> for multiple firms across Kolkata,
-        increasing their sales and services by over 50%.
+        Designed and implemented a 10+ Web Applications like E-commerce and{" "}
+        Online Appointment Booking Apps using for multiple firms across Kolkata,
+        <span className="bold">
+          increasing their sales and services by over 50%
+        </span>{" "}
+        during the COVID pandemic.
       </>,
       <>
-        Designed and implemented a dashboard using{" "}
-        <span className="bold">React</span> and{" "}
-        <span className="bold">Express</span> to visualize data stored in{" "}
-        <span className="bold">MongoDB</span>, decreasing time to understand
-        delivery driver work sessions by over 10 times.
+        Created a dashboard to visualize data stored in, decreasing time to
+        understand delivery driver work sessions by over 10 times.
       </>,
       <>
         Ensured only authorized employees have access to the application by
@@ -79,9 +85,9 @@ const experiencesList = [
         <span className="bold">JSON Web Token</span> to sign valid requests.
       </>,
       <>
-        Deployed Web Applications to production using{" "}
-        <span className="bold">Digital Ocean</span> Cloud Infrastructure
-        Provider and secured domains using SSL Certificates.
+        Deployed Web Applications to production on{" "}
+        <span className="bold">Digital Ocean</span> and secured domains using
+        SSL Certificates.
       </>,
     ],
   },
