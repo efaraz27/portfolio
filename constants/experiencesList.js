@@ -1,6 +1,6 @@
 const experiencesList = [
   {
-    positionName: "Software Engineer Intern",
+    positionName: "Founding Software Engineer",
     date: "Sep 2022 - Present",
     location: "MasterExchange / Sweden - Stockholm",
     bullets: [
