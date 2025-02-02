@@ -41,7 +41,7 @@ const Navbar = () => {
                 Projects
               </Link>
             </div>
-            <div
+            {/* <div
               className="nav-link"
               // onClick={() => {
               //   openInNewTab(
@@ -52,7 +52,7 @@ const Navbar = () => {
               <a href="https://docs.google.com/document/d/1wtVhJ-epnGNUCCfQbJT-KEyzSBjMiu09VzzvH4iBYhw/edit?usp=sharing">
                 Résumé
               </a>
-            </div>
+            </div> */}
             <div className="nav-link">
               <Link
                 activeClass="active"
@@ -120,7 +120,7 @@ const Navbar = () => {
                 Projects
               </Link>
             </div>
-            <div
+            {/* <div
               className="menu-item"
               onClick={() => {
                 openInNewTab(
@@ -130,7 +130,7 @@ const Navbar = () => {
               }}
             >
               Résumé
-            </div>
+            </div> */}
             <div
               className="menu-item"
               onClick={() => {

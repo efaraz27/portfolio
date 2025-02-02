@@ -36,9 +36,8 @@ const Project = (props) => {
             <Image
               src={`${props.images}/main.png`}
               alt={props.name}
-              width={"1350px"}
-              height={"900px"}
-              quality={100}
+              width={"1920px"}
+              height={"957px"}
             />
           </div>
 

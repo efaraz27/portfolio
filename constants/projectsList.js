@@ -1,59 +1,61 @@
 const projectsList = [
   {
-    name: "Social Media App",
+    name: "MasterExchange",
     desc: (
       <span>
-        A social media app that shows you to the world.
+        A marketplace for investing in music royalties.
         <br />
-        The Frontend features a fully responsive dark themed UI built using
-        React and Material-UI. The backend features a scalable REST API build
-        with Express as a framework, MongoDB as a database and AWS S3 Storage
-        bucket to store and retrieve files.
+        Led the entire tech stack from the React frontend to the FastAPI backend
+        and AWS deployment. handling thousands of concurrent user transactions and trades.
       </span>
     ),
-    images: "/project-images/social-media-app",
-    tags: "React - Material-UI - Express - MongoDB - AWS S3",
-    url: "https://social-media-app-efaraz27.herokuapp.com",
+    images: "/project-images/masterexchange",
+    tags: "React - FastAPI - AWS - PostgreSQL",
+    url: "https://www.masterexchange.com",
   },
   {
-    name: "Rent Car App",
+    name: "PointsOwl",
     desc: (
       <span>
-        Rent a car. Your easy way to travel.
-        <br />A landing page for a car rental web application build with React
-        TypeScript, Tailwind CSS and Styled Components.
-      </span>
-    ),
-    images: "/project-images/rent-car-app",
-    tags: "React - Redux - TailwindCSS",
-    url: "https://efaraz27.github.io/rent-car-app/",
-  },
-  {
-    name: "Quick Fix",
-    desc: (
-      <span>
-        Quick Fix, repair your phone at doorstep.
-        <br />A Full-Stack Web App to book appointments with skilled technicians
-        and get your device fixed at the comfort of your home.
-      </span>
-    ),
-    images: "/project-images/quick-fix",
-    tags: "React - Node.js - Express.js - MongoDB",
-    url: "https://quick-fix-mern.herokuapp.com",
-  },
-  {
-    name: "D.jas Tailors",
-    desc: (
-      <span>
-        An e-commerce for fashion as unique as you are.
+        A music-tech SaaS helping creators and their teams optimize royalties.
         <br />
-        An E-Commerce App where you can customize and order your apparel down to
-        the finest details tailored to fit you.
+        Built using Next.js, Node.js, and PostgreSQL, handling hundreds of
+        thousands of royalty data.
       </span>
     ),
-    images: "/project-images/djas",
-    tags: "React - Node.js - Express.js - MongoDB - Razorpay",
-    url: "http://djas-tailors.herokuapp.com/#",
+    images: "/project-images/pointsowl",
+    tags: "Next.js - Node.js - PostgreSQL",
+    url: "https://www.pointsowl.com",
+  },
+  {
+    name: "Predli",
+    desc: (
+      <span>
+        A global firm driving emerging AI technologies.
+        <br />
+        Developed scalable SaaS solutions using Next.js, FastAPI, and AWS to
+        enhance business efficiency.
+      </span>
+    ),
+    images: "/project-images/predli",
+    tags: "Next.js - FastAPI - AWS",
+    url: "https://www.predli.com",
+  },
+  {
+    name: "Piloteer",
+    desc: (
+      <span>
+        Add Piloteer's Sensing AI to Your Meetings.
+        <br />
+        Seamlessly integrate an AI coach into any virtual meeting. 
+        <br />
+        Get live scoring, personalized feedback, and expert coaching on 13 leadership dimensions 
+        to optimize your impact and improve your leadership skills.
+      </span>
+    ),
+    images: "/project-images/piloteer",
+    tags: "React - Next.js - AI - Real-time Processing",
+    url: "https://www.piloteer.com",
   },
 ];
 
