@@ -20,7 +20,7 @@ const projectsList = [
         A music-tech SaaS helping creators and their teams optimize royalties.
         <br />
         Built using Next.js, Node.js, and PostgreSQL, handling hundreds of
-        thousands of royalty data.
+        thousands of rows of royalty data.
       </span>
     ),
     images: "/project-images/pointsowl",
