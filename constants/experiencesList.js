@@ -1,63 +1,72 @@
 const experiencesList = [
   {
     positionName: "Founding Software Engineer",
-    date: "Sep 2022 - Present",
+    date: "Sep 2022 - Nov 2024",
     location: "MasterExchange / Sweden - Stockholm",
     bullets: [
       <>
-        Responsible for engineering and maintaining Frontend and Backend
-        Applications
+        Led end-to-end development of the MasterExchange MVP using{" "}
+        <span className="bold">React</span> and <span className="bold">FastAPI</span>, 
+        delivering it within 3 months and contributing to a{" "}
+        <span className="bold">$2.7M seed funding round</span>.
+      </>,
+      <>
+        Established the technology stack, ensuring{" "}
+        <span className="bold">scalability</span> and{" "}
+        <span className="bold">reliability</span> for thousands of active users.
+      </>,
+      <>
+        Developed workflows to parse <span className="bold">royalty statements</span>, 
+        improving data processing efficiency.
+      </>,
+      <>
+        Mentored junior engineers and promoted{" "}
+        <span className="bold">technical best practices</span> as a founding 
+        member of the tech team.
       </>,
     ],
   },
   {
     positionName: "Software Development Engineer Intern",
-    date: "Jan 2021 - Sep 2022",
+    date: "Jan 2022 - Sep 2022",
     location: "Predli / Sweden - Stockholm",
     bullets: [
       <>
-        Collaborated with a UI/UX designer to engineer a{" "}
-        <span className="bold">Frontend App</span> for a minimum viable product,
-        which raised over 2.8 Million USD.
+        Engineered a full-stack <span className="bold">SaaS application</span> with{" "}
+        <span className="bold">Webflow</span>, <span className="bold">FastAPI</span>, 
+        and <span className="bold">Next.js</span>.
       </>,
       <>
-        Worked closely with the Teach Lead to design a{" "}
-        <span className="bold">Trading System</span> for buying/selling music
-        master rights .
+        Contributed to the <span className="bold">deployment</span> and{" "}
+        <span className="bold">optimization</span> of cloud-based systems on{" "}
+        <span className="bold">AWS</span> using <span className="bold">Terraform</span>.
       </>,
       <>
-        Implented animations and interactions using{" "}
-        <span className="bold">Framer Motion</span>.
-      </>,
-      <>
-        Implemented redux side effects using{" "}
-        <span className="bold">Redux-Saga</span> to handle asynchronous
-        requests.
+        Improved backend performance by{" "}
+        <span className="bold">optimizing database queries</span> and 
+        implementing <span className="bold">caching strategies</span>.
       </>,
     ],
   },
   {
     positionName: "Software Engineer Intern",
-    date: "Dec 2021 - Feb 2021",
-    location: "Mezur / US - Berkley, California",
+    date: "Dec 2021 - Feb 2022",
+    location: "Mezur.AI / US - Berkeley, California",
     bullets: [
       <>
         Designed and implemented a{" "}
-        <span className="bold">user onboarding experience</span> for new users
-        using <span className="bold">Intro.js</span> improving user retention by
-        over <span className="bold">28%</span>.
+        <span className="bold">user onboarding experience</span> using{" "}
+        <span className="bold">Intro.js</span>, improving user retention by{" "}
+        <span className="bold">28%</span>.
       </>,
       <>
-        Made changes to existing React code-base,
-        <span className="bold">fixed 20+ bugs</span> and made improvements to
-        UX.
+        Refactored and optimized an existing React codebase,{" "}
+        <span className="bold">fixing 20+ bugs</span> and improving UX.
       </>,
       <>
-        Engineered a <span className="bold">Bi-Lingual feature</span> in a{" "}
-        Webflow app and made impovements to UI and UX which led to a{" "}
-        <span className="bold">35% increase in user engagement</span> and
-        increased the market potential by making it accessible to native
-        audiences.
+        Engineered a <span className="bold">Bi-Lingual feature</span> and{" "}
+        improved UI/UX, leading to a <span className="bold">35% increase</span>{" "}
+        in user engagement and expanded market potential.
       </>,
     ],
   },
@@ -65,29 +74,25 @@ const experiencesList = [
     positionName: "Web Developer",
     date: "Dec 2020 - Dec 2021",
     location: "Freelance / India - Kolkata",
-    bullets: ["", "", "", ""],
     bullets: [
       <>
-        Designed and implemented a 10+ Web Applications like E-commerce and{" "}
-        Online Appointment Booking Apps using for multiple firms across Kolkata,
-        <span className="bold">
-          increasing their sales and services by over 50%
-        </span>{" "}
-        during the COVID pandemic.
+        Developed <span className="bold">10+ web applications</span>, including{" "}
+        e-commerce and online appointment booking apps for businesses in Kolkata,{" "}
+        <span className="bold">increasing their sales by over 50%</span> during 
+        the COVID pandemic.
       </>,
       <>
-        Created a dashboard to visualize data stored in, decreasing time to
-        understand delivery driver work sessions by over 10 times.
+        Created a dashboard to <span className="bold">visualize stored data</span>, 
+        reducing time to understand delivery driver work sessions by over 10x.
       </>,
       <>
-        Ensured only authorized employees have access to the application by
-        implementing a authentication using{" "}
-        <span className="bold">JSON Web Token</span> to sign valid requests.
+        Secured applications by implementing{" "}
+        <span className="bold">JWT-based authentication</span> to ensure only 
+        authorized users had access.
       </>,
       <>
-        Deployed Web Applications to production on{" "}
-        <span className="bold">Digital Ocean</span> and secured domains using
-        SSL Certificates.
+        Deployed web applications on <span className="bold">Digital Ocean</span> {" "}
+         and secured domains with SSL certificates.
       </>,
     ],
   },
